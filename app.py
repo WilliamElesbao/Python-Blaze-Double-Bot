@@ -13,7 +13,7 @@ def number_color(spins):
         elif spin[0] == 2:
             spin_list.append(['#262F3C', 'white', spin[1]])
         else:
-            spin_list.append(['white','blue', spin[1]])
+            spin_list.append(['white','white', spin[1]])
     return spin_list
 
 def update():
@@ -41,8 +41,9 @@ def update():
 
 screen = Tk()
 screen.resizable(False, False)
-# screen.iconbitmap('logo_willtubetech.ico')
+# screen.iconbitmap('img/logo_willtubetech.ico')
 screen.title('WillTube Tech - Bot for Blaze Double')
+
 message = Label(text='Blaze Double Spins', bg='#0F1923', fg='white', height=2, width=40, font=('', 15,'bold'))
 message.grid(row=0, column=0, columnspan=5)
 n1 = Label(text='', bg='gray', fg='white', height=3, width=8, font=('', 12))
